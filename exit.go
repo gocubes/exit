@@ -25,7 +25,7 @@ func (d debug) println(args ...interface{}) {
 
 // Waiting for exist.
 func Wait(delta uint8) {
-	Debug.println("Will waiting for exist.")
+	Debug.println("Will waiting for exit.")
 	Todo.Add(int(delta))
 	go func() {
 		signal.Notify(signalChan, os.Interrupt)
